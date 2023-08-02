@@ -1,7 +1,7 @@
 <template >
     <div class="ml-3">
         <section>
-            <strong class="display">
+            <strong class="display" :class="{'display-dark':alternativeDark}">
                 {{ timeSpend }}
             </strong>
         </section>
@@ -15,8 +15,12 @@ export default defineComponent({
     props:{
         timeSec:{
             type: Number,
-            default: 0
-        }
+            default: 0,
+        }, 
+        alternativeDark:{
+            type: Boolean,
+            default: false
+        } 
     },
     computed: {
         timeSpend(): string {
@@ -25,8 +29,11 @@ export default defineComponent({
     }
 })
 </script>
-<style >
+<style scoped>
 .display{
     color: var(--Text-primary);
+}
+.display-dark{
+    color: #000;
 }
 </style>

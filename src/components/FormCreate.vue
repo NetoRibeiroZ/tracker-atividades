@@ -33,7 +33,7 @@ export default defineComponent({
 
 })
 </script>
-<style>
+<style scoped>
 .form{
 color: var(--Text-primary);
 background-color: var(--bg-primary);

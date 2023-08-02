@@ -7,7 +7,7 @@
       <FormCreate @onSaveActivity="saveActivity" />
       <div class="list">
         <ActivityCard v-for="(activity, index) in activities" :key="index" :activity="activity" />
-        <BoxActivity v-if="emptyList"> Você não está muito produtivo hoje, faça algumas tarefas</BoxActivity>
+        <BoxActivity v-if="emptyList"> Você não está muito produtivo hoje, considere a possibilidade de fazer mais tarefas.</BoxActivity>
       </div>
     </div>
   </main>
@@ -55,7 +55,7 @@ export default defineComponent({
   padding: 1.25rem;
 }
 main{
-  --bg-primary: #FFF;
+  --bg-primary: #f8f5f5;
   --Text-primary: #000;
 }
 main.dark-mode{

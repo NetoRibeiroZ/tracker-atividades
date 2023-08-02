@@ -7,7 +7,7 @@
                 </div>
             </div>
             <div class="column">
-                <TimerCount :timeSec="activity.timeSec"/>
+                <TimerCount :alternativeDark="true" :timeSec="activity.timeSec"/>
             </div>
         </BoxActivity>
     </div>
@@ -33,3 +33,8 @@ export default defineComponent({
 })
 
 </script>
+<style>
+.display-card{
+    color: #000 !important;
+}
+</style>
